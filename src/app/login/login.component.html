@@ -5,7 +5,7 @@
         </div>
         <div class="sign-up">
             <p>Not a Join user?</p>
-            <button style="width: 85px; height: 40px;" class="button-23" role="button">Sign up</button>
+            <button [routerLink]="['/sign-up']" style="width: 85px; height: 40px;" class="button-23" role="button">Sign up</button>
         </div>
     </div>
     <mat-card class="login-input-card">
@@ -28,7 +28,7 @@
                     <mat-checkbox class="example-margin">Remember me</mat-checkbox>
                     <!-- Change Color -->
                 </section>
-                <a href="#">forgot my password</a>
+                <a [routerLink]="['/forgot-password']">forgot my password</a>
             </div>
             <div class="buttons">
                 <button class="button-23" role="button">Log in</button>
