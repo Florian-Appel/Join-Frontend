@@ -8,14 +8,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component'; 
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SummaryComponent } from './summary/summary.component';
+import { BoardComponent } from './board/board.component';
+import { AddTaskComponent } from './add-task/add-task.component';
+import { ContactsComponent } from './contacts/contacts.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     SignUpComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    SidebarComponent,
+    SummaryComponent,
+    BoardComponent,
+    AddTaskComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
