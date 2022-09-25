@@ -3,21 +3,29 @@
         <img src="assets/img/Join-logo-white.png">
     </div>
     <div class="links">
-        <div class="hover">
+        <div class="hover" [routerLink]="['/summary']">
             <img src="assets/img/summary.png">
             <p>Summary</p>
         </div>
-        <div class="hover">
+        <div class="hover" [routerLink]="['/board']">
             <img src="assets/img/board.png">
             <p>Board</p>
         </div>
-        <div class="hover">
+        <div class="hover" [routerLink]="['/add-task']">
             <img src="assets/img/add-task.png">
             <p>Add Task</p>
         </div>
-        <div class="hover">
+        <div class="hover" [routerLink]="['/contacts']">
             <img src="assets/img/contacts.png">
             <p>Contacts</p>
         </div>
     </div>
+    <div class="links-2">
+        <div class="hover" [routerLink]="['/legal-notice']" style="width: 100%;">
+            <img src="assets/img/legal-notice.png">
+            <p>Legal notice</p>
+        </div>
+    </div>
 </mat-card>
+
+<!-- Warum ist die sidebar länger als die Seite? -->

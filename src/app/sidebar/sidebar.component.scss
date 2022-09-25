@@ -28,6 +28,17 @@
     }
 }
 
+.links-2 {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    p {
+        color: white;
+        margin: 0;
+    }
+}
+
 .hover {
     display: flex;
     justify-content: center;
@@ -44,4 +55,5 @@
 
 .hover:hover {
     background-color: #091931;
+    cursor: pointer;
 }
