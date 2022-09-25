@@ -14,7 +14,8 @@ import { SummaryComponent } from './summary/summary.component';
 import { BoardComponent } from './board/board.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { LegalNoticeComponent } from './legal-notice/legal-notice.component'; 
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { HelpSiteComponent } from './help-site/help-site.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +28,10 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
     BoardComponent,
     AddTaskComponent,
     ContactsComponent,
-    LegalNoticeComponent
+    LegalNoticeComponent,
+    HelpSiteComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

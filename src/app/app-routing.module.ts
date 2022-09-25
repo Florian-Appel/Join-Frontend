@@ -4,6 +4,7 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { BoardComponent } from './board/board.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { HelpSiteComponent } from './help-site/help-site.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'add-task', component: AddTaskComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'legal-notice', component: LegalNoticeComponent},
+  {path: 'help', component: HelpSiteComponent},
 ];
 
 @NgModule({
