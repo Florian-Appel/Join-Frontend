@@ -49,3 +49,34 @@
     margin-left: 30px;
     margin-right: 30px;
 }
+
+.wide-box {
+    display: flex;
+    width: 420px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px lightgray;
+    background-color: white;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-wide-box {
+    display: flex;
+    width: 195px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px lightgray;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
