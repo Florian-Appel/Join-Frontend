@@ -1,0 +1,124 @@
+.add-task {
+    background-color: rgba(246, 247, 248, 255);
+    height: 100vh;
+    padding: 100px;
+}
+
+.headline {
+    margin-bottom: 50px;
+    h1 {
+        margin: 0;
+        color: #2a3647;
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+.input-area {
+    display: flex;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.button-23 {
+    // margin-right: 10px;
+    background-color: #2a3647;
+    border: 1px solid #2a3647;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgba(246, 247, 248, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    // margin: 0;
+    outline: none;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 110px;
+}
+
+.button-23:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23:active {
+    background-color: #2a3647;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.button-23:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+// Button 2
+.button-23-2 {
+    margin-right: 10px;
+    background-color: rgba(246, 247, 248, 255);
+    border: 1px solid #2a3647;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #2a3647;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    // font-weight: 500;
+    line-height: 20px;
+    // margin: 0;
+    outline: none;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 110px;
+}
+
+.button-23-2:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23-2:active {
+    background-color: white;
+    border-color: #2a3647;
+    transform: scale(.96);
+}
+
+.button-23-2:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}

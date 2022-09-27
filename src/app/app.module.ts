@@ -16,6 +16,8 @@ import { AddTaskComponent } from './add-task/add-task.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { HelpSiteComponent } from './help-site/help-site.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { HelpSiteComponent } from './help-site/help-site.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
