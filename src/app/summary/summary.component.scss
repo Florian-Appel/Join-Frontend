@@ -1,7 +1,12 @@
 .summary {
+    display: flex;
     background-color: rgba(246, 247, 248, 255);
     height: 100vh;
-    padding: 100px;
+}
+
+.right-side {
+    display: flex;
+    width: 100%;
 }
 
 .headline {
@@ -38,9 +43,11 @@
     }
 }
 
-.summary-show {
+.summary-content {
     display: flex;
-    justify-content: space-between;
+    margin-top: 100px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .boxes {
@@ -55,7 +62,7 @@
 .box {
     display: flex;
     width: 120px;
-    height: 140px;
+    height: 120px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 0px lightgray;
@@ -84,7 +91,7 @@
 .wide-box {
     display: flex;
     width: 420px;
-    height: 140px;
+    height: 120px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 0px lightgray;
     background-color: white;
@@ -113,7 +120,7 @@
 .middle-wide-box {
     display: flex;
     width: 195px;
-    height: 140px;
+    height: 120px;
     border-radius: 10px;
     box-shadow: 0px 0px 2px 0px lightgray;
     background-color: white;
