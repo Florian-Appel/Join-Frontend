@@ -17,7 +17,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { HelpSiteComponent } from './help-site/help-site.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatDatepickerModule} from '@angular/material/datepicker'; 
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { HeaderComponent } from './header/header.component'; 
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ContactsComponent,
     LegalNoticeComponent,
     HelpSiteComponent,
+    HeaderComponent,
   ],
   
   imports: [
