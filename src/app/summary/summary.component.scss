@@ -20,20 +20,35 @@
         color: #2a3647;
         font-size: 40px;
         font-weight: bold;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     h2 {
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 40px;
         color: #2a3647;
         font-weight: initial;
     }
 
 }
 
+.line {
+    border-left: 4px solid #29abe2;
+    height: 50px;
+}
+
+.line-2 {
+    display: flex;
+    border-left: 3px solid #d7d7d7;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
 .headline-2 {
     display: flex;
     align-items: center;
+
     h1 {
         margin: 0;
         color: #2a3647;
@@ -45,7 +60,7 @@
 
 .summary-content {
     display: flex;
-    margin-top: 100px;
+    align-items: center;
     width: 100%;
     justify-content: space-around;
 }
@@ -107,6 +122,7 @@
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+
     p {
         color: white;
     }
@@ -136,6 +152,7 @@
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+
     p {
         color: white;
     }
