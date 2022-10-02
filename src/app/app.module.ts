@@ -20,6 +20,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { HeaderComponent } from './header/header.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
     MatCheckboxModule,
     MatFormFieldModule,
     MatDatepickerModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
