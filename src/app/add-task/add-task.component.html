@@ -1,4 +1,4 @@
-<div>
+<div class="add-task">
     <div>
         <app-sidebar></app-sidebar>
     </div>
@@ -6,23 +6,35 @@
         <div>
             <app-header></app-header>
         </div>
-        <div>
-            <div>
-                <!-- headline -->
+        <div class="content">
+            <div class="headline">
+                <h1>Add Task</h1>
             </div>
-            <div>
-                <div>
-                    <!-- Reihe 1 -->
+            <div class="form-section">
+                <div class="input-fields">
+                    <label for="">Title</label>
+                    <input type="text" placeholder="Enter a title">
+                    <label for="">Title</label>
+                    <textarea name="" id="" cols="30" rows="4" placeholder="Enter a Description"></textarea>
+                    <label for="">Category</label>
+                    <!-- Dropdown (Angular Material doesn't work, why?) -->
+                    <label for="">Assigned zo</label>
+                    <!-- Dropdown (Angular Material doesn't work, why?) -->
                 </div>
-                <div>
-                    <!-- Reihe 2 -->
+                <div class="line"></div>
+                <div class="input-fields">
+                    <label for="">Due date</label>
+                    <input type="date">
+                    <label for="">Prio</label>
+                    <!-- How make it? -->
+                    <label for="">Subtasks</label>
+                    <!-- What is that? -->
                 </div>
             </div>
         </div>
+        <div class="buttons">
+            <button class="button-23-2" role="button">Clear</button>
+            <button class="button-23" role="button">Create Task</button>
+        </div>
     </div>
 </div>
-
-<!-- <div class="buttons">
-    <button class="button-23-2" role="button">Clear</button>
-    <button class="button-23" role="button">Create Task</button>
-</div> -->
