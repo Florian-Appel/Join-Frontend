@@ -1,4 +1,4 @@
-<div>
+<div class="board">
     <div>
         <app-sidebar></app-sidebar>
     </div>
@@ -6,12 +6,50 @@
         <div>
             <app-header></app-header>
         </div>
-        <div>
-            <div>
-                <!-- headline -->
+        <div class="content">
+            <div class="head-section">
+                <div class="headline">
+                    <h1>Board</h1>
+                </div>
+                <div class="section">
+                    <!-- Chance class name -->
+                    <input placeholder="Find task" type="text">
+                    <button class="button-23" role="button" [routerLink]="['/add-task']">Add Task +</button>
+                </div>
             </div>
-            <div>
-                <!-- "boxes" -->
+            <div class="all-tasks">
+                <div class="tasks">
+                    <div>
+                        <h3>To do</h3>
+                    </div>
+                    <div>
+                        <!-- Tasks (from backend) -->
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div>
+                        <h3>In progress</h3>
+                    </div>
+                    <div>
+                        <!-- Tasks (from backend) -->
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div>
+                        <h3>Awaiting Feedback</h3>
+                    </div>
+                    <div>
+                        <!-- Tasks (from backend) -->
+                    </div>
+                </div>
+                <div class="tasks">
+                    <div>
+                        <h3>Done</h3>
+                    </div>
+                    <div>
+                        <!-- Tasks (from backend) -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
