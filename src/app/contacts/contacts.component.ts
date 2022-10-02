@@ -15,7 +15,7 @@ export class ContactsComponent implements OnInit {
   }
 
   openDialog() {
-    this.dialog.open(AddContactComponent);
+    this.dialog.open(AddContactComponent, { panelClass: 'my-panel-class' });
   }
 
 }
