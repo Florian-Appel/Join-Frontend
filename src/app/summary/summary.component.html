@@ -14,7 +14,7 @@
                     <h2>Everything in a nutshell!</h2>
                 </div>
                 <div class="boxes">
-                    <div class="box">
+                    <div class="box" [routerLink]="['/board']">
                         <p>
                             <!-- Anzahl Tasks -->
                         </p>
@@ -22,7 +22,7 @@
                             Tasks in Board
                         </p>
                     </div>
-                    <div class="box margin">
+                    <div class="box margin" [routerLink]="['/board']">
                         <p>
                             <!-- Anzahl Tasks -->
                         </p>
@@ -30,7 +30,7 @@
                             Tasks in Progress
                         </p>
                     </div>
-                    <div class="box">
+                    <div class="box" [routerLink]="['/board']">
                         <p>
                             <!-- Anzahl Tasks -->
                         </p>
@@ -39,7 +39,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="wide-box">
+                <div class="wide-box" [routerLink]="['/board']">
                     <div class="wide-box-detail">
                         <div>
                             <img src="assets/img/Urgent.png">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="boxes">
-                    <div class="middle-wide-box">
+                    <div class="middle-wide-box" [routerLink]="['/board']">
                         <div>
                             <img src="assets/img/To-do.png">
                         </div>
@@ -65,7 +65,7 @@
                             <p>To-do</p>
                         </div>
                     </div>
-                    <div class="middle-wide-box" style="margin-left: 30px;">
+                    <div class="middle-wide-box" style="margin-left: 30px;" [routerLink]="['/board']">
                         <div>
                             <img src="assets/img/Done.png">
                         </div>

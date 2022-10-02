@@ -1,16 +1,15 @@
 .sidebar {
     display: flex;
-    padding-top: 50px;
     align-items: center;
     background-color: #2a3647;
     flex-direction: column;
     height: 100vh;
     width: 180px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 
 .logo {
+    padding-top: 50px;
     img {
         width: 80px;
     }
