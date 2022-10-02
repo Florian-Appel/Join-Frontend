@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddContactComponent } from './add-contact/add-contact.component';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { BoardComponent } from './board/board.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'contacts', component: ContactsComponent},
   {path: 'legal-notice', component: LegalNoticeComponent},
   {path: 'help', component: HelpSiteComponent},
+  {path: 'add-contact', component: AddContactComponent},
 ];
 
 @NgModule({
