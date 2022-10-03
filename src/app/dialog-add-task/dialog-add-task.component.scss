@@ -1,0 +1,195 @@
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headline {
+    margin-top: 20px;
+    h1 {
+        padding-left: 20px;
+        margin: 0;
+        color: #2a3647;
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.line {
+    border-left: 2px solid #d7d7d7; // Chance color
+    height: 350px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+
+    label {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 1px 0px;
+    }
+
+    textarea {
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 1px 0px;
+    }
+
+    select {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 0px;
+        height: 30px;
+    }
+}
+
+.prio-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        width: 90px;
+        height: 30px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 0px;
+        transition: transform .2s;
+
+        &:hover {
+            -ms-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            box-shadow: 0px 0px 3px 0px;
+            cursor: pointer;
+        }
+    }
+}
+
+.urgent:focus {
+    background-color: red !important;
+}
+
+.medium:focus {
+    background-color: yellow !important;
+}
+
+.low:focus {
+    background-color: green !important;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    margin-top: 80px;
+}
+
+.button-23 {
+    // margin-right: 10px;
+    background-color: #2a3647;
+    border: 1px solid #2a3647;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    // margin: 0;
+    outline: none;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 110px;
+}
+
+.button-23:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23:active {
+    background-color: #2a3647;
+    border-color: #000000;
+    transform: scale(.96);
+}
+
+.button-23:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+// Button 2
+.button-23-2 {
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #2a3647;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #2a3647;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    // font-weight: 500;
+    line-height: 20px;
+    // margin: 0;
+    outline: none;
+    padding: 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 110px;
+}
+
+.button-23-2:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+}
+
+.button-23-2:active {
+    background-color: white;
+    border-color: #2a3647;
+    transform: scale(.96);
+}
+
+.button-23-2:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+}

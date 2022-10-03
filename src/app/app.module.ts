@@ -22,6 +22,7 @@ import { HeaderComponent } from './header/header.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
+import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {MatSelectModule} from '@angular/material/select';
     HelpSiteComponent,
     HeaderComponent,
     AddContactComponent,
+    DialogAddTaskComponent,
   ],
   
   imports: [
