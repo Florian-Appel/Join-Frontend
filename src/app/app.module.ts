@@ -20,7 +20,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { HeaderComponent } from './header/header.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
-import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatFormFieldModule,
     MatDatepickerModule,
     MatDialogModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
