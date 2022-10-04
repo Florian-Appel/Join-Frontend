@@ -95,18 +95,6 @@
     }
 }
 
-.urgent:focus {
-    background-color: red !important;
-}
-
-.medium:focus {
-    background-color: yellow !important;
-}
-
-.low:focus {
-    background-color: green !important;
-}
-
 .buttons {
     display: flex;
     justify-content: end;
