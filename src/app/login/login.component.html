@@ -9,7 +9,7 @@
         </div>
     </div>
     <mat-card class="login-input-card">
-        <div class="login-input">
+        <form class="login-input">
             <div class="headline">
                 <h1>Log in</h1>
             </div>
@@ -18,8 +18,8 @@
                 <!-- or border-bottom in class headline -->
             </div>
             <div class="input-fields">
-                <input placeholder="Email" type="email">
-                <input placeholder="Password" type="password">
+                <input placeholder="Email" type="email" required>
+                <input placeholder="Password" type="password" required>
                 <!-- Change Design to default -->
             </div>
             <div class="sektion-4">
@@ -31,10 +31,10 @@
                 <a [routerLink]="['/forgot-password']">forgot my password</a>
             </div>
             <div class="buttons">
-                <button class="button-23" role="button" [routerLink]="['/summary']">Log in</button>
+                <button class="button-23" role="button">Log in</button>
                 <button class="button-23-2" role="button" [routerLink]="['/summary']">Guest Log in</button>
             </div>
-        </div>
+        </form>
 
     </mat-card>
 </mat-card>

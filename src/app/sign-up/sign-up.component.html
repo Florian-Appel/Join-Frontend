@@ -6,7 +6,7 @@
         <div class="arrow">
             <a [routerLink]="['/login']"><img src="assets/img/arrow-left.png"></a>
         </div>
-        <div class="sign-up-input">
+        <form class="sign-up-input">
             <div class="headline">
                 <h1>Sign up</h1>
             </div>
@@ -15,14 +15,14 @@
                 <!-- or border-bottom in class headline -->
             </div>
             <div class="input-fields">
-                <input placeholder="Name" type="text">
-                <input placeholder="Email" type="email">
-                <input placeholder="Password" type="password">
+                <input placeholder="Name" type="text" required>
+                <input placeholder="Email" type="email" required>
+                <input placeholder="Password" type="password" required>
             </div>
             <div class="buttons">
                 <button class="button-23" role="button">Sign up</button>
             </div>
-        </div>
+        </form>
 
     </mat-card>
 </mat-card>
