@@ -23,6 +23,7 @@ import { AddContactComponent } from './add-contact/add-contact.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.compon
     MatDatepickerModule,
     MatDialogModule,
     MatSelectModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
