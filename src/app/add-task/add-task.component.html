@@ -6,48 +6,49 @@
         <div>
             <app-header></app-header>
         </div>
-        <form class="content">
+        <form class="content" #taskPost="ngForm" (ngSubmit)="submitData(taskPost)" [noValidate]="false">
             <div class="headline">
                 <h1>Add Task</h1>
             </div>
             <div class="form-section">
                 <div class="input-fields">
                     <label for="">Title</label>
-                    <input type="text" placeholder="Enter a title" required>
+                    <input type="text" placeholder="Enter a title" required ngModel name="title">
+
                     <label for="">Description</label>
-                    <textarea cols="30" rows="4" placeholder="Enter a Description" required></textarea>
+                    <textarea cols="30" rows="4" placeholder="Enter a Description" required name="description"
+                        ngModel></textarea>
+
                     <label for="">Category</label>
-                    <select name="dropdown" required>
+                    <select name="dropdown" required name="category" ngModel>
                         <option value="" disabled selected>Select a category</option>
-                        <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+                        <option *ngFor="let category of categories" [ngValue]="category.id">{{category.name}}</option>
                     </select>
-                    <label for="">Assigned zo</label>
-                    <select name="dropdown" required>
+
+                    <label for="">Assigned to</label>
+                    <select name="dropdown" required name="user" ngModel>
                         <option value="" disabled selected>Select a user</option>
-                        <option *ngFor="let user of users" value="{{user.id}}">{{user.username}}</option>
+                        <option *ngFor="let user of users" [ngValue]="user.id">{{user.username}}</option>
                         <option value="User 2">User 2</option>
                     </select>
                 </div>
                 <div class="line"></div>
                 <div class="input-fields">
                     <label for="">Due date</label>
-                    <input type="date" required>
+                    <input type="date" required name="date" ngModel>
+
                     <label for="">Prio</label>
                     <div class="prio-buttons">
-                        <!-- How make this right? -->
-                        <!-- The buttons are only for illustration -->
-                        <!-- <button class="urgent">Urgent</button>
-                        <button class="medium">Medium</button>
-                        <button class="low">Low</button> -->
-                        <button *ngFor="let priority of priorities"
+                        <button *ngFor="let priority of priorities" type="button"
                             [ngClass]="{'selected' : priority.id == selected_prio}"
-                            (click)="select_prio($event,priority.id)">{{priority.name}}</button>
+                            (click)="select_prio(priority.id)">{{priority.name}}</button>
                     </div>
+                    <input [(ngModel)]="selected_prio" type="hidden" name="priority">
                 </div>
             </div>
             <div class="buttons">
                 <button class="button-23-2" role="button">Clear</button>
-                <button class="button-23" role="button">Create Task</button>
+                <button class="button-23" type="submit">Create Task</button>
             </div>
         </form>
     </div>

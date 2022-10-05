@@ -25,6 +25,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
