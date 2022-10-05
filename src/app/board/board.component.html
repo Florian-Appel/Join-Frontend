@@ -18,20 +18,39 @@
                 </div>
             </div>
             <div class="all-tasks">
-                <div class="tasks">
+                <div class="tasks" *ngFor="let status of status_list">
                     <div>
-                        <h3>To do</h3>
+                        <h3>{{status.name}}</h3>
                     </div>
-                    <div>
-                        <!-- Tasks (from backend) -->
+                    <div class="todo-task" *ngFor="let task of tasks">
+                        <div class="task" *ngIf="task.status == status.id">
+                            <div>
+                               <span>{{task.category}}</span>
+                            </div>
+                            <div>
+                                <h4>
+                                    <span>{{task.title}}</span>
+                                </h4>
+                                <p>
+                                    <span>{{task.description}}</span>
+                                </p>
+                            </div>
+                            <div>
+                                <span>{{task.priority}}</span>
+                            </div>
+                            <div>
+                                <span>{{task.date}}</span>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="tasks">
+                <!-- <div class="tasks">
                     <div>
                         <h3>In progress</h3>
                     </div>
                     <div>
-                        <!-- Tasks (from backend) -->
+                        
                     </div>
                 </div>
                 <div class="tasks">
@@ -39,7 +58,7 @@
                         <h3>Awaiting Feedback</h3>
                     </div>
                     <div>
-                        <!-- Tasks (from backend) -->
+                        
                     </div>
                 </div>
                 <div class="tasks">
@@ -47,31 +66,10 @@
                         <h3>Done</h3>
                     </div>
                     <div>
-                        <!-- Tasks (from backend) -->
+                       
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </div>
-
-
-<!-- Test Task start -->
-<div class="task">
-    <div>
-        <!-- Category (how make the colors?) -->
-    </div>
-    <div>
-        <h4>
-            <!-- Title -->
-        </h4>
-        <p>
-            <!-- Description -->
-        </p>
-    </div>
-    <div>
-        <!-- user (how make it?) -->
-        <!-- prio (as img) -->
-    </div>
-</div>
-<!-- Test task end -->

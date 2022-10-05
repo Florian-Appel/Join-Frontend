@@ -24,6 +24,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSelectModule} from '@angular/material/select';
 import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatDialogModule,
     MatSelectModule,
     MatButtonToggleModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
