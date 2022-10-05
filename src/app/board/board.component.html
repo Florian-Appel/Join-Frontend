@@ -25,7 +25,7 @@
                     <div class="todo-task" *ngFor="let task of tasks">
                         <div class="task" *ngIf="task.status == status.id">
                             <div>
-                               <span>{{task.category}}</span>
+                                <span>{{getCategoryName(task.category)}}</span>
                             </div>
                             <div>
                                 <h4>
@@ -36,13 +36,19 @@
                                 </p>
                             </div>
                             <div>
-                                <span>{{task.priority}}</span>
-                            </div>
-                            <div>
+                                <span class="label">Due Date: </span>
                                 <span>{{task.date}}</span>
                             </div>
+                            <div>
+                                <span class="label">Prority: </span>
+                                <span>{{getPriorityName(task.priority)}}</span>
+                            </div>
+                            <div>
+                                <span class="label">Assigned To: </span>
+                                <span>{{getUsername(task.user)}}</span>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- <div class="tasks">

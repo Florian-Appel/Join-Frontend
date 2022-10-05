@@ -33,4 +33,8 @@ export class TaskService {
   getStatus() {
     return this.http.get<Status[]>("https://danielstoehr.pythonanywhere.com/status/")
   }
+
+  addTask(task:TaskData){
+    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/",task)
+  }
 }

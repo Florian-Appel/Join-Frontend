@@ -44,10 +44,11 @@
                             (click)="select_prio(priority.id)">{{priority.name}}</button>
                     </div>
                     <input [(ngModel)]="selected_prio" type="hidden" name="priority">
+                    <input name="status" [ngModel]="1" type="hidden" />
                 </div>
             </div>
             <div class="buttons">
-                <button class="button-23-2" role="button">Clear</button>
+                <button class="button-23-2" type="reset">Clear</button>
                 <button class="button-23" type="submit">Create Task</button>
             </div>
         </form>

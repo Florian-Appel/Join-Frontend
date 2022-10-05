@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, NgForm } from '@angular/forms';
 import { Category } from '../category';
 import { Priority } from '../priority';
 import { TaskService } from '../task.service';
@@ -36,7 +37,7 @@ export class AddTaskComponent implements OnInit {
       alert("Please select priority!")
       return
     }
-    console.log(f.value);
+    this.service.addTask(f.value).subscribe(data => console.log(data));
     
   }
 
