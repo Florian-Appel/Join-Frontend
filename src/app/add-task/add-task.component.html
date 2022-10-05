@@ -19,17 +19,12 @@
                     <label for="">Category</label>
                     <select name="dropdown" required>
                         <option value="" disabled selected>Select a category</option>
-                        <!-- <option value="Design">Design</option>
-                        <option value="Sales">Sales</option>
-                        <option value="Backoffice">Backoffice</option>
-                        <option value="Marketing">Marketing</option>
-                        <option value="Media">Media</option> -->
                         <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
                     </select>
                     <label for="">Assigned zo</label>
                     <select name="dropdown" required>
                         <option value="" disabled selected>Select a user</option>
-                        <option value="User 1">User 1</option>
+                        <option *ngFor="let user of users" value="{{user.id}}">{{user.username}}</option>
                         <option value="User 2">User 2</option>
                     </select>
                 </div>
@@ -44,7 +39,9 @@
                         <!-- <button class="urgent">Urgent</button>
                         <button class="medium">Medium</button>
                         <button class="low">Low</button> -->
-                        <button *ngFor="let priority of priorities" (click)="select_prio($event,priority.id)">{{priority.name}}</button>
+                        <button *ngFor="let priority of priorities"
+                            [ngClass]="{'selected' : priority.id == selected_prio}"
+                            (click)="select_prio($event,priority.id)">{{priority.name}}</button>
                     </div>
                 </div>
             </div>
