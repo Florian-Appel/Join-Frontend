@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
+import { HttpClient } from '@angular/common/http'
 import { TaskData } from './task-data';
 import { Category } from './category';
 import { Priority } from './priority';
@@ -12,7 +12,7 @@ import { Status } from './status';
 })
 export class TaskService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getTasks() {
     return this.http.get<TaskData[]>("https://danielstoehr.pythonanywhere.com/tasks/")
@@ -34,7 +34,7 @@ export class TaskService {
     return this.http.get<Status[]>("https://danielstoehr.pythonanywhere.com/status/")
   }
 
-  addTask(task:TaskData){
-    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/",task)
+  addTask(task: TaskData) {
+    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/", task)
   }
 }

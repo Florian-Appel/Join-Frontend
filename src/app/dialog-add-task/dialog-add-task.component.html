@@ -5,37 +5,37 @@
     <form class="form-section">
         <div class="input-fields">
             <label for="">Title</label>
-            <input type="text" placeholder="Enter a title" required>
+            <input type="text" placeholder="Enter a title" required ngModel name="title">
+
             <label for="">Description</label>
-            <textarea cols="30" rows="4" placeholder="Enter a Description" required></textarea>
+            <textarea cols="30" rows="4" placeholder="Enter a Description" required name="description"
+                ngModel></textarea>
+
             <label for="">Category</label>
-            <select name="dropdown" required>
+            <select name="dropdown" required name="category" ngModel>
                 <option value="" disabled selected>Select a category</option>
-                <option value="Design">Design</option>
-                <option value="Sales">Sales</option>
-                <option value="Backoffice">Backoffice</option>
-                <option value="Marketing">Marketing</option>
-                <option value="Media">Media</option>
+                <option *ngFor="let category of categories" [ngValue]="category.id">{{category.name}}</option>
             </select>
-            <label for="">Assigned zo</label>
-            <select name="dropdown" required>
+
+            <label for="">Assigned to</label>
+            <select name="dropdown" required name="user" ngModel>
                 <option value="" disabled selected>Select a user</option>
-                <option value="User 1">User 1</option>
-                <option value="User 2">User 2</option>
+                <option *ngFor="let user of users" [ngValue]="user.id">{{user.username}}</option>
             </select>
         </div>
         <div class="line"></div>
         <div class="input-fields">
             <label for="">Due date</label>
-            <input type="date" required>
+            <input type="date" required name="date" ngModel>
+
             <label for="">Prio</label>
             <div class="prio-buttons">
-                <!-- How make this right? -->
-                <!-- The buttons are only for illustration -->
-                <button class="urgent">Urgent</button>
-                <button class="medium">Medium</button>
-                <button class="low">Low</button>
+                <button *ngFor="let priority of priorities" type="button"
+                    [ngClass]="{'selected' : priority.id == selected_prio}"
+                    (click)="select_prio(priority.id)">{{priority.name}}</button>
             </div>
+            <input [(ngModel)]="selected_prio" type="hidden" name="priority">
+            <input name="status" [ngModel]="1" type="hidden" />
             <div class="buttons">
                 <button class="button-23-2" role="button" [mat-dialog-close]>Cancel</button>
                 <button class="button-23" role="button">Create Task</button>

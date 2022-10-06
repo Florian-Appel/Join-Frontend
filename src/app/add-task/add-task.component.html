@@ -29,7 +29,6 @@
                     <select name="dropdown" required name="user" ngModel>
                         <option value="" disabled selected>Select a user</option>
                         <option *ngFor="let user of users" [ngValue]="user.id">{{user.username}}</option>
-                        <option value="User 2">User 2</option>
                     </select>
                 </div>
                 <div class="line"></div>
