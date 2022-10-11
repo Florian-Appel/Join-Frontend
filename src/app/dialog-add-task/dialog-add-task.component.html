@@ -2,7 +2,7 @@
     <div class="headline">
         <h1>Add Task</h1>
     </div>
-    <form class="form-section">
+    <form class="form-section" #taskPost="ngForm" (ngSubmit)="submitData(taskPost)" [noValidate]="false">
         <div class="input-fields">
             <label for="">Title</label>
             <input type="text" placeholder="Enter a title" required ngModel name="title">
@@ -38,7 +38,7 @@
             <input name="status" [ngModel]="1" type="hidden" />
             <div class="buttons">
                 <button class="button-23-2" role="button" [mat-dialog-close]>Cancel</button>
-                <button class="button-23" role="button">Create Task</button>
+                <button class="button-23" role="button" type="submit">Create Task</button>
             </div>
         </div>
     </form>
