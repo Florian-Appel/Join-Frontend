@@ -8,7 +8,21 @@
         </div>
         <div class="content">
             <div class="contact-list">
-                <!-- Contacts list -->
+                <div class="contact" *ngFor="let task of tasks">
+                    <div>
+                        <!-- User img -->
+                    </div>
+                    <div>
+                        <div>
+                            <span>{{getUsername(task.user)}}</span>
+                            <!-- dosen't work -->
+                        </div>
+                        <div>
+                            <!-- email adress -->
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="right-content">
                 <div class="headline">
@@ -19,9 +33,9 @@
                 <div>
                     <!-- Contact Detail (only show when click on a contact) -->
                 </div>
-                <div class="button">
+                <!-- <div class="button">
                     <button class="button-23" role="button" (click)="openDialog()">New contact</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
