@@ -5,6 +5,7 @@ import { Category } from './category';
 import { Priority } from './priority';
 import { User } from './user';
 import { Status } from './status';
+import { AddUser } from './add-user';
 
 @Injectable({
   providedIn: 'root'
@@ -37,4 +38,9 @@ export class TaskService {
   addTask(task: TaskData) {
     return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/", task)
   }
+
+  addUser(user: AddUser) {
+    return this.http.post<AddUser>("https://danielstoehr.pythonanywhere.com/register/", user)
+  }
 }
+

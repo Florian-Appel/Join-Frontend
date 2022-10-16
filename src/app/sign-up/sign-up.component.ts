@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { TaskService } from '../task.service';
 
 
 @Component({
@@ -8,11 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() {
+  constructor(private service:TaskService) {
 
   }
 
   ngOnInit(): void {
+  }
+
+  submitData(f:NgForm){
+    this.service.addUser(f.value).subscribe(data => console.log(data));
   }
 
 }
