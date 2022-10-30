@@ -18,7 +18,7 @@ export class AddTaskComponent implements OnInit {
 
   selected_prio = 0
 
-  constructor(private service:TaskService) { 
+  constructor(private service:TaskService) { // ?
     this.service.getCategories().subscribe(data => this.categories = data)
     this.service.getPriorities().subscribe(data => this.priorities = data)
     this.service.getUsers().subscribe(data => this.users = data)
@@ -37,7 +37,7 @@ export class AddTaskComponent implements OnInit {
       alert("Please select priority!")
       return
     }
-    this.service.addTask(f.value).subscribe(data => console.log(data));
+    this.service.addTask(f.value).subscribe(data => console.log(data)); // Send data to backend
     
   }
 

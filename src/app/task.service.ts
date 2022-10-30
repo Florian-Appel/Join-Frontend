@@ -35,8 +35,10 @@ export class TaskService {
     return this.http.get<Status[]>("https://danielstoehr.pythonanywhere.com/status/")
   }
 
+
+
   addTask(task: TaskData) {
-    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/", task)
+    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/", task) // send data to backend
   }
 
   addUser(user: AddUser) {
