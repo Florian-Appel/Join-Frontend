@@ -14,12 +14,15 @@ import { User } from '../user';
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.scss']
 })
+
 export class BoardComponent implements OnInit {
   tasks:TaskData[] = []
   categories:Category[] = []
   status_list:Status[]=[]
   priorities:Priority[]=[]
   users:User[]=[]
+
+  
 
   constructor(public dialog: MatDialog, private service:TaskService) {
     this.service.getTasks().subscribe(data => {
@@ -63,6 +66,12 @@ export class BoardComponent implements OnInit {
   getUsername(id:number) {
     const element = this.users.find(user => user.id == id)
     return element?.username
+  }
+
+  currentDraggedElement = 'currentDraggedElement';
+
+  startDragging() {
+    this.currentDraggedElement;
   }
 
 }

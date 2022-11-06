@@ -23,7 +23,7 @@
                         <h3>{{status.name}}</h3>
                     </div>
                     <div class="todo-task" *ngFor="let task of tasks">
-                        <div class="task" *ngIf="task.status == status.id">
+                        <div class="task" *ngIf="task.status == status.id" draggable="true" ondragstart="startDragging()">
                             <div class="category-backround">
                                 <span>{{getCategoryName(task.category)}}</span>
                             </div>
