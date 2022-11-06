@@ -45,4 +45,3 @@ export class TaskService {
     return this.http.post<AddUser>("https://danielstoehr.pythonanywhere.com/register/", user)
   }
 }
-

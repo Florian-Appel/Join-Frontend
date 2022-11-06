@@ -16,12 +16,19 @@
             </div>
             <div class="input-fields">
                 <div class="input-name">
-                    <input name="first_name" type="text" placeholder="First name" required>
-                    <input name="last_name" type="text" placeholder="Last name" required>
+
+                    <input ngModel name="first_name" type="text" placeholder="First name" required>
+                    <input ngModel name="last_name" type="text" placeholder="Last name" required>
                 </div>
-                <input name="email" placeholder="Email" type="email" required>
-                <input name="password" placeholder="Password" type="password" required>
-                <input name="password2" placeholder="repeat password" type="password" required>
+                <div>
+                    <input type="text" name="username" ngModel placeholder="username">
+                    <input ngModel name="email" placeholder="Email" type="email" required>
+                </div>
+                <div>
+                    <input ngModel name="password" placeholder="Password" type="password" required>
+                    <input ngModel name="password2" placeholder="repeat password" type="password" required>
+                </div>
+                
             </div>
             <div class="buttons">
                 <button type="submit" class="button-23" role="button">Sign up</button>
