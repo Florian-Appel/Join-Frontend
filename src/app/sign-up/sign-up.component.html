@@ -15,8 +15,8 @@
                 <!-- or border-bottom in class headline -->
             </div>
             <div class="input-fields">
+                <!-- <input type="hidden" name="redirect" value="/login/"> -->
                 <div class="input-name">
-
                     <input ngModel name="first_name" type="text" placeholder="First name" required>
                     <input ngModel name="last_name" type="text" placeholder="Last name" required>
                 </div>
@@ -31,7 +31,7 @@
                 
             </div>
             <div class="buttons">
-                <button type="submit" class="button-23" role="button">Sign up</button>
+                <button type="submit" class="button-23" role="button" [routerLink]="['/login']">Sign up</button>
             </div>
         </form>
 
