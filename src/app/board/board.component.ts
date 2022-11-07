@@ -8,6 +8,7 @@ import { Status } from '../status';
 import { TaskData } from '../task-data';
 import { TaskService } from '../task.service';
 import { User } from '../user';
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop'; // Drag & Drop Test
 
 @Component({
   selector: 'app-board',
@@ -68,10 +69,29 @@ export class BoardComponent implements OnInit {
     return element?.username
   }
 
-  currentDraggedElement = 'currentDraggedElement';
+  currentDraggedElement = 'currentDraggedElement'; // ?
 
   startDragging() {
     this.currentDraggedElement;
+  }
+
+  // Drag & Drop Test
+
+  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+
+  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex,
+      );
+    }
   }
 
 }

@@ -11,6 +11,27 @@
                 <div class="headline">
                     <h1>Board</h1>
                 </div>
+                <!-- Drag & Drop Test Start -->
+                <div cdkDropListGroup>
+                    <div class="example-container">
+                        <h2>To do</h2>
+
+                        <div cdkDropList [cdkDropListData]="todo" class="example-list"
+                            (cdkDropListDropped)="drop($event)">
+                            <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+                        </div>
+                    </div>
+
+                    <div class="example-container">
+                        <h2>Done</h2>
+
+                        <div cdkDropList [cdkDropListData]="done" class="example-list"
+                            (cdkDropListDropped)="drop($event)">
+                            <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Drag & Drop Test End -->
                 <div class="section">
                     <!-- Chance class name -->
                     <input placeholder="Find task" type="text">
@@ -23,7 +44,8 @@
                         <h3>{{status.name}}</h3>
                     </div>
                     <div class="todo-task" *ngFor="let task of tasks">
-                        <div class="task" *ngIf="task.status == status.id" draggable="true" ondragstart="startDragging()">
+                        <div class="task" *ngIf="task.status == status.id" draggable="true"
+                            ondragstart="startDragging()">
                             <div class="category-backround">
                                 <span>{{getCategoryName(task.category)}}</span>
                             </div>

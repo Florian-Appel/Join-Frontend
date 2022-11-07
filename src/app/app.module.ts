@@ -26,6 +26,8 @@ import { DialogAddTaskComponent } from './dialog-add-task/dialog-add-task.compon
 import {MatButtonToggleModule} from '@angular/material/button-toggle'; 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 
 
 @NgModule({
@@ -58,7 +60,8 @@ import { FormsModule } from '@angular/forms';
     MatDialogModule,
     MatSelectModule,
     MatButtonToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
