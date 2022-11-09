@@ -12,13 +12,31 @@
                     <h1>Board</h1>
                 </div>
                 <!-- Drag & Drop Test Start -->
-                <div cdkDropListGroup>
+                <div cdkDropListGroup style="display: flex;" >
                     <div class="example-container">
                         <h2>To do</h2>
 
                         <div cdkDropList [cdkDropListData]="todo" class="example-list"
                             (cdkDropListDropped)="drop($event)">
                             <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+                        </div>
+                    </div>
+
+                    <div class="example-container">
+                        <h2>In Progress</h2>
+
+                        <div cdkDropList [cdkDropListData]="inProgress" class="example-list"
+                            (cdkDropListDropped)="drop($event)">
+                            <div class="example-box" *ngFor="let item of inProgress" cdkDrag>{{item}}</div>
+                        </div>
+                    </div>
+
+                    <div class="example-container">
+                        <h2>Awating Feedback</h2>
+
+                        <div cdkDropList [cdkDropListData]="awatingFeedback" class="example-list"
+                            (cdkDropListDropped)="drop($event)">
+                            <div class="example-box" *ngFor="let item of awatingFeedback" cdkDrag>{{item}}</div>
                         </div>
                     </div>
 
@@ -44,8 +62,7 @@
                         <h3>{{status.name}}</h3>
                     </div>
                     <div class="todo-task" *ngFor="let task of tasks">
-                        <div class="task" *ngIf="task.status == status.id" draggable="true"
-                            ondragstart="startDragging()">
+                        <div class="task" *ngIf="task.status == status.id">
                             <div class="category-backround">
                                 <span>{{getCategoryName(task.category)}}</span>
                             </div>

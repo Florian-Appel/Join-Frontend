@@ -23,6 +23,7 @@ export class BoardComponent implements OnInit {
   priorities:Priority[]=[]
   users:User[]=[]
 
+
   
 
   constructor(public dialog: MatDialog, private service:TaskService) {
@@ -69,15 +70,13 @@ export class BoardComponent implements OnInit {
     return element?.username
   }
 
-  currentDraggedElement = 'currentDraggedElement'; // ?
-
-  startDragging() {
-    this.currentDraggedElement;
-  }
-
   // Drag & Drop Test
 
   todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+
+  inProgress = ['test'];
+
+  awatingFeedback = ['test'];
 
   done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
 
