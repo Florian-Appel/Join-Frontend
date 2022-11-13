@@ -8,16 +8,17 @@
         </div>
         <div class="content">
             <div class="contact-list">
-                <div class="contact" *ngFor="let task of tasks">
+                <div class="contact" *ngFor="let user of users">
                     <div>
                         <!-- User img -->
                     </div>
                     <div>
                         <div>
-                            <span>{{getUsername(task.user)}}</span>
+                            <span>{{user.last_name}}, {{user.first_name}} ({{user.username}})</span>
                             <!-- Show all registered Users -->
                         </div>
                         <div>
+                            <span>{{user.email}}</span>
                             <!-- email adress -->
                         </div>
                     </div>
