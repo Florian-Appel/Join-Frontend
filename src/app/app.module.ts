@@ -27,6 +27,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 
@@ -61,7 +63,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatSelectModule,
     MatButtonToggleModule,
     HttpClientModule,
-    DragDropModule
+    DragDropModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

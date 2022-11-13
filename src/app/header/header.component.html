@@ -4,6 +4,10 @@
     </div>
     <div class="header-img">
         <img src="assets/img/help.png" [routerLink]="['/help']" style="cursor: pointer;">
-        <img src="assets/img/user.png" class="user-img">
+        <img mat-button [matMenuTriggerFor]="menu" src="assets/img/user.png" class="user-img" style="cursor: pointer;">
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item [routerLink]="['/login']">logout</button>
+            <!-- routerlink only for show -->
+        </mat-menu>
     </div>
 </mat-card>

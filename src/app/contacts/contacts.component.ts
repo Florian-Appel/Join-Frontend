@@ -11,11 +11,14 @@ import { TaskData } from '../task-data';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-  tasks:TaskData[] = []
-  users:User[]=[]
+  tasks: TaskData[] = []
+  users: User[] = []
 
 
-  constructor(public dialog: MatDialog, private service:TaskService) {
+  constructor(public dialog: MatDialog, private service: TaskService) {
+    this.service.getTasks().subscribe(data => {
+      this.tasks = data
+    })
     this.service.getUsers().subscribe(data => {
       this.users = data
     })
@@ -28,7 +31,7 @@ export class ContactsComponent implements OnInit {
     this.dialog.open(AddContactComponent, { panelClass: 'my-panel-class' });
   }
 
-  getUsername(id:number) {
+  getUsername(id: number) {
     const element = this.users.find(user => user.id == id)
     return element?.username
   }
