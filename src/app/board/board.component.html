@@ -11,45 +11,6 @@
                 <div class="headline">
                     <h1>Board</h1>
                 </div>
-                <!-- Drag & Drop Test Start -->
-                <div cdkDropListGroup style="display: flex;" >
-                    <div class="example-container">
-                        <h2>To do</h2>
-
-                        <div cdkDropList [cdkDropListData]="todo" class="example-list"
-                            (cdkDropListDropped)="drop($event)">
-                            <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
-                        </div>
-                    </div>
-
-                    <div class="example-container">
-                        <h2>In Progress</h2>
-
-                        <div cdkDropList [cdkDropListData]="inProgress" class="example-list"
-                            (cdkDropListDropped)="drop($event)">
-                            <div class="example-box" *ngFor="let item of inProgress" cdkDrag>{{item}}</div>
-                        </div>
-                    </div>
-
-                    <div class="example-container">
-                        <h2>Awating Feedback</h2>
-
-                        <div cdkDropList [cdkDropListData]="awatingFeedback" class="example-list"
-                            (cdkDropListDropped)="drop($event)">
-                            <div class="example-box" *ngFor="let item of awatingFeedback" cdkDrag>{{item}}</div>
-                        </div>
-                    </div>
-
-                    <div class="example-container">
-                        <h2>Done</h2>
-
-                        <div cdkDropList [cdkDropListData]="done" class="example-list"
-                            (cdkDropListDropped)="drop($event)">
-                            <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Drag & Drop Test End -->
                 <div class="section">
                     <!-- Chance class name -->
                     <input placeholder="Find task" type="text">
