@@ -16,32 +16,32 @@ export class TaskService {
   constructor(private http: HttpClient) { }
 
   getTasks() {
-    return this.http.get<TaskData[]>("https://danielstoehr.pythonanywhere.com/tasks/")
+    return this.http.get<TaskData[]>("https://join1.pythonanywhere.com/tasks/")
   }
 
   getCategories() {
-    return this.http.get<Category[]>("https://danielstoehr.pythonanywhere.com/categories/")
+    return this.http.get<Category[]>("https://join1.pythonanywhere.com/categories/")
   }
 
   getPriorities() {
-    return this.http.get<Priority[]>("https://danielstoehr.pythonanywhere.com/priorities/")
+    return this.http.get<Priority[]>("https://join1.pythonanywhere.com/priorities/")
   }
 
   getUsers() {
-    return this.http.get<User[]>("https://danielstoehr.pythonanywhere.com/users/")
+    return this.http.get<User[]>("https://join1.pythonanywhere.com/users/")
   }
 
   getStatus() {
-    return this.http.get<Status[]>("https://danielstoehr.pythonanywhere.com/status/")
+    return this.http.get<Status[]>("https://join1.pythonanywhere.com/status/")
   }
 
 
 
   addTask(task: TaskData) {
-    return this.http.post<TaskData>("https://danielstoehr.pythonanywhere.com/tasks/", task) // send data to backend
+    return this.http.post<TaskData>("https://join1.pythonanywhere.com/tasks/", task) // send data to backend
   }
 
   addUser(user: AddUser) {
-    return this.http.post<AddUser>("https://danielstoehr.pythonanywhere.com/register/", user)
+    return this.http.post<AddUser>("https://join1.pythonanywhere.com/register/", user)
   }
 }
