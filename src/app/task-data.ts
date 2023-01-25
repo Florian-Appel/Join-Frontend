@@ -5,5 +5,5 @@ export interface TaskData {
     user: number,
     category: number,
     priority: number,
-    status:number
+    status: number,
 }

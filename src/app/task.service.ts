@@ -38,7 +38,7 @@ export class TaskService {
 
 
   addTask(task: TaskData) {
-    return this.http.post<TaskData>("https://join1.pythonanywhere.com/tasks/", task) // send data to backend
+    return this.http.post<TaskData>("https://join1.pythonanywhere.com/tasks/", task)
   }
 
   addUser(user: AddUser) {
