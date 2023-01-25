@@ -34,7 +34,7 @@
                     (click)="select_prio(priority.id)">{{priority.name}}</button>
             </div>
             <input [(ngModel)]="selected_prio" type="hidden" name="priority">
-            <input name="status" [ngModel]="1" type="hidden" />
+            <input name="status" [ngModel]="null" type="hidden" />
             <div class="buttons">
                 <button class="button-23-2" role="button" [mat-dialog-close]>Cancel</button>
                 <button class="button-23" role="button" type="submit">Create Task</button>
