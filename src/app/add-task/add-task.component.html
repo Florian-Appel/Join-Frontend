@@ -6,7 +6,7 @@
         <div>
             <app-header></app-header>
         </div>
-        <form class="content" #taskPost="ngForm" (ngSubmit)="submitData(taskPost)" [noValidate]="false">
+        <form class="content" action="/board/" #taskPost="ngForm" (ngSubmit)="submitData(taskPost)" [noValidate]="false">
             <div class="headline">
                 <h1>Add Task</h1>
             </div>
@@ -43,7 +43,7 @@
                             (click)="select_prio(priority.id)">{{priority.name}}</button>
                     </div>
                     <input [(ngModel)]="selected_prio" type="hidden" name="priority">
-                    <input name="status" [ngModel]="null" type="hidden" />
+                    <input name="status" [ngModel]="1" type="hidden" />
                 </div>
             </div>
             <div class="buttons">
