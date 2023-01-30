@@ -10,17 +10,14 @@
             <div class="contact-list">
                 <div class="contact" *ngFor="let user of users">
                     <div>
-                        <!-- User img -->
+                        <img class="img" src="assets/img/user.png">
                     </div>
-                    <div>
+                    <div class="names">
                         <div>
-                            <span><b>Name:</b> {{user.last_name}}, {{user.first_name}}</span>
+                            {{user.last_name}}, {{user.first_name}}
                         </div>
                         <div>
-                            <span><b>Userame:</b> {{user.username}}</span>
-                        </div>
-                        <div>
-                            <span><b>Email:</b> {{user.email}}</span>
+                            <a href="#">{{user.email}}</a>
                         </div>
                     </div>
                 </div>
