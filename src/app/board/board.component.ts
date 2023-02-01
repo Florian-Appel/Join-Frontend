@@ -93,5 +93,6 @@ export class BoardComponent implements OnInit {
         );
       }
     }
+    
   
 }
