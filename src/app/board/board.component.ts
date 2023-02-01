@@ -37,6 +37,10 @@ export class BoardComponent implements OnInit {
 
     this.service.getStatus().subscribe(data => {
       this.status_list = data
+      for (let i = 0; i < this.status_list.length; i++) {
+        console.log(this.status_list[0])
+      }
+      
     })
 
     this.service.getPriorities().subscribe(data => {
