@@ -29,6 +29,9 @@ export class BoardComponent implements OnInit {
   constructor(public dialog: MatDialog, private service:TaskService) {
     this.service.getTasks().subscribe(data => {
       this.tasks = data
+      for (let i = 0; i < this.tasks.length; i++) {
+        console.log('Tasks', this.tasks.length) // Anzahl der tasks
+      }
     })
 
     this.service.getCategories().subscribe(data => {
@@ -38,9 +41,8 @@ export class BoardComponent implements OnInit {
     this.service.getStatus().subscribe(data => {
       this.status_list = data
       for (let i = 0; i < this.status_list.length; i++) {
-        console.log(this.status_list[0])
+        console.log('Status', this.status_list.length) // Wie bekomme ich die Anzahl der Tasks in den einzelnet status id's ???
       }
-      
     })
 
     this.service.getPriorities().subscribe(data => {
